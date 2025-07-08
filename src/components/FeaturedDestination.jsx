@@ -3,6 +3,7 @@ import { roomsDummyData } from '../assets/assets'
 import HotelCard from './HotelCard'
 import Title from './Title'
 
+
 const FeaturedDestination = () => {
   return (
     <div className='flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50 py-20'>
