@@ -15,7 +15,7 @@ const FeaturedDestination = () => {
             ))}
         </div>
 
-        <button className='my-16 px-2 py-2 text-sm font-medium border border-gray-300 rounded bg-white hover:bg-gray-50 transition-all cursor-pointer'>
+        <button onClick={} className='my-16 px-2 py-2 text-sm font-medium border border-gray-300 rounded bg-white hover:bg-gray-50 transition-all cursor-pointer'>
             View All Destinations
         </button>
     </div>
