@@ -6,7 +6,7 @@ const ExclusiveOffer = () => {
     <div>
       <div>
         <Title />
-        <button></button>
+        <button>View all offer</button>
       </div>
     </div>
   )
