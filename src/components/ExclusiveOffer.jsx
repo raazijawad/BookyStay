@@ -8,10 +8,11 @@ const ExclusiveOffer = () => {
   return (
     <div>
       <div>
-        <Title />
+        <Title align='left' title='Exclusive offers' subTitle='Take advantage of our limited-time offers and special packages to enhance your stay and create unforgettable memories.' />
         <button>
           View all offer
-          <img src={assets.arrowIcon} alt="" />
+          <img src={assets.arrowIcon} 
+          className='group-hover:translate-x-1 transition-all' />
         </button>
       </div>
     </div>
