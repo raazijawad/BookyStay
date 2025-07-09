@@ -6,7 +6,10 @@ const ExclusiveOffer = () => {
     <div>
       <div>
         <Title />
-        <button>View all offer</button>
+        <button>
+          View all offer
+          <img src="" alt="" />
+        </button>
       </div>
     </div>
   )
