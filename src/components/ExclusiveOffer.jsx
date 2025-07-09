@@ -1,6 +1,8 @@
 import React from 'react'
 import Title from 'Title'
-import {assets} from '..assets/assets'
+import {assets} from '../assets/assets'
+
+
 
 const ExclusiveOffer = () => {
   return (
@@ -9,7 +11,7 @@ const ExclusiveOffer = () => {
         <Title />
         <button>
           View all offer
-          <img src={assets} alt="" />
+          <img src={assets.arrowIcon} alt="" />
         </button>
       </div>
     </div>
