@@ -22,6 +22,7 @@ const ExclusiveOffer = () => {
             <p className='px-3 py-1 absolute top-4 left-4 font-medium text-xs bg-white text-gray-800 rounded-full'>{item.priceOff}% OFF</p>
             <div>
               <p className=''>{item.title}</p>
+              <p className=''>{item.description}</p>
             </div>
           </div>
         ))}
