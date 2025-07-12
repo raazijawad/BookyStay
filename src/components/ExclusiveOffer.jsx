@@ -27,7 +27,7 @@ const ExclusiveOffer = () => {
             </div>
             <button>
               View Offers
-              <img src={assets.arrowIcon} alt="" />
+              <img className='invert group-hover:translate-x-1 transition-all' src={assets.arrowIcon} alt="" />
             </button>
           </div>
         ))}
