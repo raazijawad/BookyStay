@@ -26,7 +26,8 @@ const ExclusiveOffer = () => {
               <p className=''>Expires{item.expiryDate}</p>
             </div>
             <button>
-              View offers
+              View Offers
+              <img src={assets.arrowIcon} alt="" />
             </button>
           </div>
         ))}
