@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       {!isOwnerPath && <NavBar />}
-      <div className=']'>
+      <div className=''>
         <Routes>
           <Route path='/' element={<Home/>}/>
         </Routes>
