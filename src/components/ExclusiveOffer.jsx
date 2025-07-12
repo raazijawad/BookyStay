@@ -26,7 +26,7 @@ const ExclusiveOffer = () => {
               <p className=''>Expires{item.expiryDate}</p>
             </div>
             <button>
-              
+              View offers
             </button>
           </div>
         ))}
