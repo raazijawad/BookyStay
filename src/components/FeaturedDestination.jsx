@@ -13,7 +13,7 @@ const FeaturedDestination = () => {
         <Title title="Featured Destination" subTitle="Discover our handpicked selection of exeptional propoties around the world, offering unparalleled luxury and forgettable experience"/>
 
         <div className='flex flex-wrap items-center justify-center gap-6 mt-20'>
-            {roomsDummyData.slice(0.4).map((room, index)=>(
+            {roomsDummyData.slice(0, 4).map((room, index)=>(
                 <HotelCard key={room._id} room={room} index={index} />
             ))}
         </div>
