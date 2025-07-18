@@ -1,6 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
-
+// div //
 const StarRating = ({rating = 4}) => {
     return (
         <>
