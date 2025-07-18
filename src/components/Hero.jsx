@@ -1,6 +1,6 @@
 import React from 'react';
 import { assets, cities } from '../assets/assets';
-
+// div //
 const Hero = () => {
   return (
     <div className='flex flex-col items-start justify-center px-6 md:px-16 bg-[url("/pictures/heroImage.png")] h-screen bg-cover lg:px-24 text-white bg-no-repeat bg-center'>
