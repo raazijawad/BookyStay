@@ -2,7 +2,7 @@ import React from 'react'
 import Title from './Title'
 import { testimonials } from '../assets/assets'
 import StarRating from './StarRating'
-
+// div //
 const Testimonials = () => {
   return (
     <div className='grid grid-col-1 items-center px-6 md:px-16 lg:px-24 bg-slate-50 pt-20 pb-30'>
