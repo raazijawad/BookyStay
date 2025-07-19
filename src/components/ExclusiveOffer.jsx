@@ -36,7 +36,7 @@ const ExclusiveOffer = () => {
   )
 }
 
-// div //
+
 export default ExclusiveOffer
 
 
