@@ -3,7 +3,7 @@ import Title from './Title'
 import { assets } from '../assets/assets'
 // div //
 const NewsLetter = () => {
-    return (
+    return ( 
         <div className='px-4'>
             <div className="flex flex-col items-center max-w-5xl lg:w-full rounded-2xl px-4 py-12 md:py-16 mx-2 lg:mx-auto my-30 bg-gray-900 text-white">
                 <Title title="Stay Inspired" subTitle="Join our newsletter and be the first to discover new destination" />
