@@ -96,7 +96,7 @@ export const testimonials = [
 ];
 
 // Facility Icon
-export const facilityIcons = {
+export const facilityIconsAndTexts = {
     "Free WiFi": assets.freeWifiIcon,
     "Free Breakfast": assets.freeBreakfastIcon,
     "Room Service": assets.roomServiceIcon,
