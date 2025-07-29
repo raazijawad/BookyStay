@@ -1,5 +1,5 @@
 import React from 'react'
-import { assets, facilityIcons, roomsDummyData } from '../assets/assets'
+import { assets, facilityIconsAndTexts, roomsDummyData } from '../assets/assets'
 import { div } from 'framer-motion/client'
 import { useNavigate } from 'react-router-dom'
 import StarRating from '../components/StarRating'
@@ -35,7 +35,7 @@ const AllRooms = () => {
                     <div className='flex flex-wrap items-center gap-4 mt-3 mb-6'>
                       {room.amenities.map((item, index)=>(
                         <div key={index} className='flex items-center gap-2 px-3 py-2 rounded-lg bg-[#F5F5FF]/70'>
-                          <img src={facilityIcons[item]} alt="" className='w-5 h-5' />
+                          <img src={facilityIconsAndTexts[item]} alt="" className='w-5 h-5' />
                           <p className='text-xs'>{item}</p>
                         </div>
                       ))}
@@ -53,7 +53,7 @@ const AllRooms = () => {
 
       {/* Filters */}
       <div>
-        
+
       </div>
     </div>
   )
