@@ -1,5 +1,5 @@
 import React from 'react'
-import { assets, roomsDummyData } from '../assets/assets'
+import { assets, facilityIcons, roomsDummyData } from '../assets/assets'
 import { div } from 'framer-motion/client'
 import { useNavigate } from 'react-router-dom'
 import StarRating from '../components/StarRating'
@@ -16,7 +16,7 @@ const AllRooms = () => {
         </div>
 
         {roomsDummyData.map((room)=>(
-            <div>
+            <div key={room._id} className='flex flex-col md:flex-row items-start py-10 gap-10 border-b border-gray-300 last:pb-30 last:border-0'>
                 <img onClick={()=> {navigate(`/rooms/${room._id}`); scrollTo(0,0)}} src={room.images[0]} alt="" title='View Rooms Detail' className='max-h-65 md:w-1/2 rounded-xl shadow-lg object-cover cursor-pointer'/>
 
                 <div className='md:w-1/2 flex flex-col gap-2'>
@@ -30,14 +30,30 @@ const AllRooms = () => {
                         <img src={assets.locationIcon} alt="" />
                         <span>{room.hotel.address}</span>
                     </div>
+
+                    {/* Room ameneties */}
+                    <div className='flex flex-wrap items-center gap-4 mt-3 mb-6'>
+                      {room.amenities.map((item, index)=>(
+                        <div key={index} className='flex items-center gap-2 px-3 py-2 rounded-lg bg-[#F5F5FF]/70'>
+                          <img src={facilityIcons[item]} alt="" className='w-5 h-5' />
+                          <p className='text-xs'>{item}</p>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Room Price per Night */}
+                    <div>
+                      <p className='text-xl font-medium text-gray-700'>${room.pricePerNight} /night</p>
+                    </div>
+
                 </div>
             </div>
         ))}
+      </div>
 
-        <div>
-
-        </div>
-
+      {/* Filters */}
+      <div>
+        
       </div>
     </div>
   )
