@@ -8,6 +8,47 @@ const AllRooms = () => {
   const navigate = useNavigate();
   const [openFilters, setOpenFilters] = useState(false)
 
+
+  const CheckBox = ({label, selected = false, onChange = () =>{}})=>{
+    return (
+      <label className='flex gap-3 items-center cursor-pointer mt-2 text-sm'>
+        <input type="checkbox" checked={selected} onChange={(e)=>onchange(e.target.checked, label)} />
+        <span className='font-light selected-none'>{label}</span>
+      </label>
+    )
+  }
+
+  const RadioButton = ({label, selected = false, onChange = () =>{}})=>{
+    return (
+      <label className='flex gap-3 items-center cursor-pointer mt-2 text-sm'>
+        <input type="radio" name='sortOption' checked={selected} onChange={()=>onchange(label)} />
+        <span className='font-light selected-none'>{label}</span>
+      </label>
+    )
+  }
+
+  const roomTypes = [
+    "Single Bed",
+    "Double Bed",
+    "luxury Room",
+    "Family Suit",
+  ];
+
+  const priceRange = [
+    "0 to 500",
+    "500 to 1000",
+    "1000 to 2000",
+    "2000 to 3000",
+  ];
+
+  const sortOption = [
+    "Price Low to High",
+    "Price High to Low",
+    "Newest First"
+  ];
+
+
+
   return (
     <div className='flex flex-col-reverse items-start justify-between pt-28 md:mt-35 px-4 md:px-16 lg:px-24 xl:px-32 lg:flex-row'>
       <div>
@@ -67,6 +108,21 @@ const AllRooms = () => {
         <div className={`${openFilters ? 'h-auto' : "h-0 lg:h-auto"} overflow-hidden transition-all duration-700`}>
           <div className='px-5 pt-5'>
             <p className='font-medium text-gray-800 pb-2'>Popular filters</p>
+            {roomTypes.map((room, index)=>(
+              <CheckBox key={index} label={room} />
+            ))}
+          </div>
+          <div className='px-5 pt-5'>
+            <p className='font-medium text-gray-800 pb-2'>Price Range</p>
+            {priceRange.map((range, index)=>(
+              <CheckBox key={index} label={`$ ${range}`} />
+            ))}
+          </div>
+          <div className='px-5 pt-5 pb-7'>
+            <p className='font-medium text-gray-800 pb-2'>Sort by</p>
+            {sortOption.map((option, index)=>(
+              <RadioButton key={index} label={option}/>
+            ))}
           </div>
         </div>
       </div>
