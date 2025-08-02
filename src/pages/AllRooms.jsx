@@ -50,7 +50,7 @@ const AllRooms = () => {
 
 
   return (
-    <div className='flex flex-col-reverse items-start justify-between pt-28 md:mt-35 px-4 md:px-16 lg:px-24 xl:px-32 lg:flex-row'>
+    <div className='flex flex-col-reverse items-start justify-between pt-5 md:mt-35 px-4 md:px-16 lg:px-24 xl:px-32 lg:flex-row'>
       <div>
         <div className='flex flex-col items-start text-left'>
           <h1 className='font-playfair text-4xl md:text-[40px]'>Hotel Rooms</h1>
