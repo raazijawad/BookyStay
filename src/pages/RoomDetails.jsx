@@ -123,6 +123,10 @@ const RoomDetails = () => {
             </div>
           </div>
         </div>
+
+        <button className='bg-primary px-6 py-2.5 rounded mt-4 text-white hover:bg-primary-dull transition-all cursor-pointer'>
+          Contact Now
+        </button>
       </div>
     </div>
   )
