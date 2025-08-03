@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Title from '../components/Title'
-import { userBookingsDummyData } from '../assets/assets'
+import { assets, userBookingsDummyData } from '../assets/assets'
 
 const MyBookings = () => {
 
@@ -20,11 +20,20 @@ const [bookings, setBookings] = useState(userBookingsDummyData)
         {bookings.map((booking) => (
             <div key={booking._id} className='grid grid-cols-1 md:grid-cols-[3fr_2fr_1fr] w-full py-6 border-b border-gray-300 first:border-t'>
                 {/* -- Hotel details -- */}
-                <div>
-                    <img src={booking.room.images[0]} alt="" />
-                    <div>
-                        <p>{booking.hotel.name}</p>
-                        <span>({booking.room.roomType})</span>
+                <div className='flex flex-col md:flex-row'>
+                    <img className='min-md:w-44 rounded object-cover shadow' src={booking.room.images[0]} alt="" />
+                    <div className='flex flex-col gap-1.5 max-md:mt-3 min-md:ml-4'>
+                        <p className='font-playfair text-2xl'>{booking.hotel.name} 
+                          <span className='font-inter text-sm'>({booking.room.roomType})</span> </p>
+                        <div className='flex items-center gap-1 text-sm text-gray-500'>
+                            <img src={assets.locationIcon} alt="" />
+                            <span>{booking.hotel.address}</span>
+                        </div>
+                        <div className='flex items-center gap-1 text-sm text-gray-500'>
+                            <img src={assets.guestsIcon} alt="" />
+                            <span>Guest : {booking.guests}</span>
+                        </div>
+                        <p className='text-base'>Total : ${booking.totalPrice}</p>
                     </div>
                 </div>
 
