@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { assets, facilityIconsAndTexts, roomsDummyData } from '../assets/assets'
-import { motion } from 'framer-motion' // ✅ Correct import
 import { useNavigate } from 'react-router-dom'
 import StarRating from '../components/StarRating'
 
@@ -41,7 +40,7 @@ const AllRooms = () => {
         </div>
 
         {roomsDummyData.map((room) => (
-          <motion.div // ✅ You can animate this if needed
+          <div // ✅ You can animate this if needed
             key={room._id}
             className='flex flex-col md:flex-row items-start py-10 gap-10 border-b border-gray-300 last:pb-30 last:border-0'>
             <img
@@ -81,7 +80,7 @@ const AllRooms = () => {
                 <p className='text-xl font-medium text-gray-700'>${room.pricePerNight} /night</p>
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
 
