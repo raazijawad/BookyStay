@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Title from '../components/Title'
 import { assets, userBookingsDummyData } from '../assets/assets'
-import { button } from 'framer-motion/client'
+import { motion } from 'framer-motion';
 
 const MyBookings = () => {
 
