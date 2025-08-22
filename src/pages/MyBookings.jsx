@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Title from '../components/Title'
 import { assets, userBookingsDummyData } from '../assets/assets'
-import { motion, AnimatePresence } from "framer-motion";
 
 const MyBookings = () => {
 
