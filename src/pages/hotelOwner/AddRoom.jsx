@@ -1,6 +1,6 @@
 import React, { use, useState } from 'react'
 import Title from '../../components/Title'
-import { div, object } from 'framer-motion/client'
+import { AnimatePresence, motion } from 'framer-motion';
 import { assets } from '../../assets/assets'
 
 const AddRoom = () => {
@@ -67,7 +67,7 @@ const AddRoom = () => {
               <label htmlFor={`amenities${index+1}`}> {amenity}</label>
             </div>
           ))}
-          
+
       </div>
 
       <button className='bg-primary px-8 py-2 rounded mt-8 text-white cursor-pointer'>
