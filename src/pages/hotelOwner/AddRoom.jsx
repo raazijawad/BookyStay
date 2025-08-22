@@ -1,6 +1,6 @@
 import React, { use, useState } from 'react'
 import Title from '../../components/Title'
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion, AnimatePresence } from "framer-motion";
 import { assets } from '../../assets/assets'
 
 const AddRoom = () => {
